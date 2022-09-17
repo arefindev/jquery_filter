@@ -4,35 +4,73 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Isotope Filter</title>
-    <link rel="stylesheet" href="css/filterizr.css">
+    <title>Jquery Filter</title>
     <link rel="stylesheet" href="css/custom.css">
 </head>
 <body>
-
-    <div class="filter-container">
-        <div class="filtr-item" data-category="1" data-sort="value">
-            <img src="img/city_1.jpg" alt="sample" />
+    <div class="page-container">
+        <div class="filter">
+            <ul>
+                <li data-filter="*">All</li>
+                <li data-filter=".web_design">Web Design</li>
+                <li data-filter=".web_development">Web Development</li>
+                <li data-filter=".graphic_design">Graphic Design</li>
+            </ul>
         </div>
-        <div class="filtr-item" data-category="2, 1" data-sort="value">
-            <img src="img/city_2.jpg" alt="sample" />
-        </div>
-        <div class="filtr-item" data-category="1, 3" data-sort="value">
-            <img src="img/city_3.jpg" alt="sample" />
+        <div class="filter-items">
+            <div class="filter-item web_design">
+                <div class="inner">
+                    <div class="photo"><img src="img/1.jpg" alt=""></div>
+                    <div class="text">
+                        <h2>Portfolio Maker</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="filter-item web_development">
+                <div class="inner">
+                    <div class="photo"><img src="img/2.jpg" alt=""></div>
+                    <div class="text">
+                        <h2>Event Management</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="filter-item web_design">
+                <div class="inner">
+                    <div class="photo"><img src="img/3.jpg" alt=""></div>
+                    <div class="text">
+                        <h2>Sports Website</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="filter-item graphic_design">
+                <div class="inner">
+                    <div class="photo"><img src="img/4.jpg" alt=""></div>
+                    <div class="text">
+                        <h2>Ticket Booking</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="filter-item graphic_design">
+                <div class="inner">
+                    <div class="photo"><img src="img/5.jpg" alt=""></div>
+                    <div class="text">
+                        <h2>Affiliate Blog</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="filter-item web_development">
+                <div class="inner">
+                    <div class="photo"><img src="img/6.jpg" alt=""></div>
+                    <div class="text">
+                        <h2>Online Hotel Booking</h2>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
-    <ul>
-        <!-- For filtering controls add -->
-        <li data-filter="all"> All items </li>
-        <li data-filter="1"> Category 1 </li>
-        <li data-filter="2"> Category 2 </li>
-        <li data-filter="3"> Category 3 </li>
-    </ul>
-   
-
     <script src="js/jquery-3.6.1.min.js"></script>
-    <script src="js/jquery.filterizr.min.js"></script>
+    <script src="js/filter.min.js"></script>
     <script src="js/custom.js"></script>
 </body>
 </html>
